@@ -7,7 +7,9 @@ runs:
   using: "composite"
   steps: 
     - name: task1
+      env: 
+        name: ${{inputs.name}}
       run: |
         echo "composite action and version 2.0 is ready."
-        echo "Your name is ${{inputs.name}}"
+        echo "Your name is $name"
       shell: bash
