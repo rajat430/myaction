@@ -9,5 +9,5 @@ runs:
     - name: task1
       run: |
         echo "composite action and version 2.0 is ready."
-        echo "Your name is $name"
+        echo "Your name is ${{inputs.name}}"
       shell: bash
