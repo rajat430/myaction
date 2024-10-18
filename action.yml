@@ -5,5 +5,6 @@ description: "first action"
 runs:
   using: "composite"
   steps: 
-  - name: task1
-    run: echo "composite action"
+    - name: task1
+      run: echo "composite action"
+      shell: bash
