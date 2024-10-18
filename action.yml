@@ -1,5 +1,4 @@
 name: customaction
-on: workflow_call
 description: "first action"
 
 runs:
