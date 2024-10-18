@@ -1,9 +1,13 @@
 name: customaction
 description: "first action"
-
+inputs:
+  name: 
+    default: "rajat"
 runs:
   using: "composite"
   steps: 
     - name: task1
-      run: echo "composite action and version 2.0 is ready."
+      run: |
+        echo "composite action and version 2.0 is ready."
+        echo "Your name is " $name
       shell: bash
