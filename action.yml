@@ -11,5 +11,5 @@ runs:
         name: ${{inputs.name}}
       run: |
         echo "composite action and version 2.0 is ready."
-        echo "Your name is $name"
+        echo "Your name is ${{env.name}}"
       shell: bash
